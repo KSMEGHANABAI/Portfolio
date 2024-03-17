@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e6144cab5c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+ <!--header  -->
+ <div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/nameimage.jpg" class="logo">
+            <ul id="sidemenu">
+                <li><a href='#header'>Home</a></li>
+                <li><a href='#about'>About</a></li>
+                <li><a href='#services'>Projects</a></li>
+                <li><a href='#portfolio'>Certificates</a></li>
+                <li><a href='#additional'>Additional section</a></li>
+                <li><a href='#contact'>Contact</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>AIML Student</p>
+            <h1>Hi, I'm <span>Meghana</span><br> from Ballari</h1>
+        </div>
+    </div>
+ </div>
+ <!-- about -->
+ <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/headerimage11.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>My name is Meghana. I am currently pursuing my studies in Ballari institute of technology and management specialized in Artificial intelligence and machine learning with CGPA 7.55. Along with my degree I completed C, C++, java courses and I have learned various technologies that have helped me to develop projects such as Emotion Detection Through Facial Feature Analysis, Online fee payment, An Approach to Maintain Attendance Using Image Processing Technique. Doing this projects I have discovered that I am a team worker and I am good that communication skills, I even have a leadership qualities. I have actively Participated in “DEVELOPTHON 2022” conducted by INFINITY STUDIO Deshpande Startups and “Coding and Debugging" event conducted in college.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Languages</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Hard skills</span><br>C,C++,Java,Python,SQL,Html,Css,Js</li>
+                        <li><span>Soft skills></span><br>Communication skills,Leadership qualities,Team worker</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li>Hindi,Kannada,Telugu,English,Marathi</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Secondary(High School)</span><br>Sri Vishweshwaraiah School, State board, Ballari</li>
+                        <li><span>Senior Secondary(Pre-Engineering)</span><br>Bellary Independent PU College, Ballari</li>
+                        <li><span>Bachelor of Engineering(Artificial Intelligence and Machine Learning)</span><br>Ballari Institute of Technology and Management</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+ <!-- services -->
+ <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My projects</h1>
+        <div class="services-list">
+            <div>
+                <h2>Emotion Detection Through Facial Feature Analysis: </h2>
+                <p>This project aims to develop a system by analyzing facial features through Deep Image Processing techniques.</p>
+            </div>
+            <div>
+                <h2>Online fee payment:</h2>
+                <p>“Online Fee Payment using Android Studio” is a mobile app project aimed at streamlining the fee payment process for educational institutions.</p>
+            </div>
+            <div>
+                <h2>An Approach To Maintain Attendance Using Image Processing Technique: </h2>
+                <p>This project introduces an automated attendance management system using image processing with Python and Visual Studio Code. The system dynamically trains a model with OpenCV and employs the K-NeighborsClassifier for testing, ensuring accuracy in attendance records. A web interface is developed using Streamlit, allowing users to input start and end dates, with an optional name field, for attendance retrieval. The system processes this information, retrieves relevant records, and presents them on the web interface.</p>
+            </div>
+        </div>
+    </div>
+ </div>
+ <!-- certificates -->
+ <div id="portfolio">
+       <div class="container">
+        <h1 class="sub-title">certificates</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/c.jpg">
+                <div class="layer">
+                    <h3>Sparkle C</h3>
+                    <p>Student development program sparkle c.</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/object.jpg">
+                <div class="layer">
+                    <h3>Object oriented programming</h3>
+                    <p>Student development program object- oriented language(C++ language).</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/wipro.jpg">
+                <div class="layer">
+                    <h3>Wipro full stack</h3>
+                    <p>Wipro TalentNext certificate for completion of Java Full Stack course by DICE ID platform.</p>
+                </div>
+            </div>
+        </div>
+       </div>
+ </div>
+ <!-- additional -->
+ <div id="additional">
+    <div class="container">
+     <h1 class="sub-title">AdditionalSection</h1>
+     <div class="work-list">
+         <div class="work">
+             <img src="images/despande.jpg">
+             <div class="layer">
+                 <h3>Hackthon </h3>
+                 <p>Participated in “DEVELOPTHON 2022” conducted by INFINITY STUDIO Deshpande Startups.</p>
+             </div>
+         </div>
+         <div class="work">
+             <img src="images/codding.jpg">
+             <div class="layer">
+                 <h3>Codding and Debugging</h3>
+                 <p>Participated in codding and debugging conducted by college.</p>
+             </div>
+         </div>
+         </div>
+     </div>
+    </div>
+</div>
+<!-- contact -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>ksmeghana@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>9113962322</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/_meghnahh?igsh=MWJjam82MXNkN3MwZQ=="><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/k-s-meghana-bai-a24378258?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="NAME" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <!-- copy right -->
+    <div class="copyright">
+      <p>Copyright @Meghana</p>
+    </div>
+</div>
+ <script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+ </script>
+ <script>
+    var sidemeu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right="0";
+    }
+    function closemenu(){
+        sidemeu.style.right="-200px";
+    }
+ </script>
+ <script>
+ const scriptURL = 'https://script.google.com/macros/s/AKfycbz3sDVYQKDaP5NWsm-S0pLsQNGn88Ir5wctQemPhhHmNeotMN2emBUt31x2j0Wa3MkyEQ/exec'
+ const form = document.forms['submit-to-google-sheet']
+ const msg=document.getElementById("msg")
+ form.addEventListener('submit', e => {
+   e.preventDefault()
+   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+     .then(response => {
+        msg.innerHTML="Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML=""
+        },5000)
+        form.reset()
+     })
+     .catch(error => console.error('Error!', error.message))
+ })
+</script>
+</body>
+</html>
